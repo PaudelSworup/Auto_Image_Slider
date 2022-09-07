@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+
+    <button onclick="demoFunction()"> click to see the results</button><br><br>
+    <button ondblclick="demoFunction()"> click to see the results</button>
+    <h3 id="res"></h3>
+
+    <script>
+        // onclick,ondblclick,onmouseover,onmouseout,onload,onmousemove,onkeyup,onchange,onsubmit,onkeydown
+
+        const demoFunction = () =>{
+        // document.getElementById('res').innerHTML = new Date()
+            // document.write(new Date())
+            document.querySelector('#res').innerHTML = new Date()
+        }
+    </script>
+    
+</body>
+</html>

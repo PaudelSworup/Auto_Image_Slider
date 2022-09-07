@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouse events</title>
+    <style>
+        .container{
+            height: 400px;
+            width: 400px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container" onmouseover="demo()" onmouseout="demoFunction()">
+        <h1 id="asdf"></h1>
+    </div>
+
+    <script>
+
+
+        const demo = () =>{
+            document.querySelector('#asdf').innerHTML = "this is mouseover";
+            document.querySelector('.container').style.backgroundColor = 'dodgerblue'
+        }
+
+        const demoFunction = () =>{
+            document.querySelector('#asdf').innerHTML = "this is mouseout";
+        }
+
+    </script>
+</body>
+</html>

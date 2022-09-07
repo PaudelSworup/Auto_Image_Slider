@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        const numOne = Number(prompt("Enter a 1st number"))
+
+        const numTwo = Number(prompt("Enter a 2nt number"))
+
+        const operation = prompt("Enter a operator")
+        let result;
+       
+        switch(operation){
+            case "+": 
+             result = numOne + numTwo
+             document.write(`addition of a num is ${result}`)
+             break
+
+            case "-":
+            result = numOne - numTwo
+             document.write(`Subtraction of a num is ${result}`)
+             break
+
+             case "%":
+             result = numOne%numTwo
+             document.write(`Remainder of a num is ${result}`)
+             break
+
+             case "/":
+             result = numOne/numTwo
+             document.write(`Division of a num is ${result}`)
+             break
+
+             case "*":
+             result = numOne*numTwo
+             document.write(`Multiplication of a num is ${result}`)
+             break
+
+             default:
+             document.write(`Invalid opeartion... check your opeartor and try again`)
+             break
+        }
+        
+
+        
+
+
+    </script>
+    
+</body>
+</html>

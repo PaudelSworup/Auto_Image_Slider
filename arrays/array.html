@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const fruits = ['apple','banana','orange','mango','guava','grapes'];
+        document.write(`${fruits} <br>`)
+        document.write(`${fruits[3]} <br>`)
+
+        // to count the numbers of elements
+        document.write(`${fruits.length} <br>`)
+
+        // pop()=> remove last array elements
+
+        fruits.pop()
+        document.write(`${fruits} <br>`)
+
+        // push()=> add the elements in an array
+        fruits.push('pomegranate')
+        document.write(`${fruits} <br>`)
+
+        // shift()=> remove 1st array element
+        // unshift()=> add new element in an array in  1st pos
+        fruits.shift()
+        document.write(`${fruits} <br>`)
+
+        fruits.unshift('Blueberry')
+        document.write(`${fruits} <br>`)
+        
+
+        // splice()
+        fruits.splice(2,0,'pineapple','watermelon')
+        // here 2 num is index num where to start from
+        // 0 num of elem removed from an array
+        document.write(`${fruits} <br> <br>`)
+
+
+        fruits.splice(4,2)
+        document.write(`${fruits} <br> <br> <br>`)
+
+
+        fruits.splice(2,2 , 'lemon' , 'kiwi')
+        document.write(`${fruits} <br> <br> <br>`)
+
+
+        // sort() -> ascending order
+
+        fruits.sort()
+        document.write(`${fruits} <br> <br> <br>`)
+
+        // reverse() -> reverese the elements
+        fruits.reverse()
+        document.write(`${fruits} <br> <br> <br>`)
+
+
+
+    </script>
+</body>
+</html>
